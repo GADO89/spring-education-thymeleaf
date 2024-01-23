@@ -3,8 +3,7 @@ package com.spring.education.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
-
+public class User extends BaseEntity{
     private String username;
     private String password;
 
