@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Date;
 import java.util.List;
-
+  //$ git commit -m "hibernate (Course Student) Closes #10"
 public class Student extends Person{
 
     @OneToOne
