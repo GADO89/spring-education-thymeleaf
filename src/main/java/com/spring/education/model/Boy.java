@@ -2,10 +2,22 @@ package com.spring.education.model;
 
 //   create models #1
 
-import jakarta.persistence.Column;
-import jakarta.persistence.MappedSuperclass;
+
 
 ////////////////////editing models #3
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @MappedSuperclass
 public class Boy extends BaseEntity{
 

@@ -1,8 +1,12 @@
 package com.spring.education.model;
 
 
-import jakarta.persistence.*;
+import lombok.*;
 
+import javax.persistence.*;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @MappedSuperclass
 public class BaseEntity{
 
