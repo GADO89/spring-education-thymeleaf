@@ -1,10 +1,9 @@
 package com.spring.education.model;
 
-public class Admin {
+//   create models #1
+public class Admin extends Boy{
 
-    private String firstname;
-    private String lastname;
-    private String phone;
+
 
 
 }
