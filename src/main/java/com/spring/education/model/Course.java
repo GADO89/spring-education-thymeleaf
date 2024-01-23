@@ -20,6 +20,7 @@ public class Course extends BaseEntity{
             inverseJoinColumns = {@JoinColumn(name = "student_id")}
     )
     private List<Student> students;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "course")
     private List<Master> masters;
 
 
