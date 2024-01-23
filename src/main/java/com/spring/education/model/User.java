@@ -6,7 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 @Entity(name = "user")
 public class User extends BaseEntity{
+
+    @Column(name = "user_name", unique = true)
     private String username;
+    @Column(name = "password")
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
@@ -18,9 +21,10 @@ public class User extends BaseEntity{
             inverseJoinColumns = {@JoinColumn(name = "role_id")}
     )
     private List<Role> roles=new ArrayList<>();
-
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy ="" )
     private Student student= new Student();
 
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy ="" )
     private Master master=new Master();
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "user")
